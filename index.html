@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tradeious.com - Your One-Stop B2B Marketplace for FMCG, Tyres, Electronics & More">
+    <title>Tradeious | B2B Marketplace for FMCG, Tyres & Electronics</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="/">
+                    <span class="logo-icon"><i class="fas fa-cube"></i></span>
+                    <span class="logo-text">Tradeious</span>
+                </a>
+            </div>
+            
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <a href="#" class="cart-btn" aria-label="Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="#" class="btn btn-primary btn-sm">Get Started</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Powering B2B Trade <br><span class="highlight">Globally</span></h1>
+            <p class="hero-subtitle">Your trusted partner for sourcing FMCG, Tyres, Electronics & Industrial Goods at competitive wholesale prices.</p>
+            <div class="hero-cta">
+                <a href="#categories" class="btn btn-primary btn-lg">Explore Categories</a>
+                <a href="#contact" class="btn btn-outline btn-lg">Contact Sales</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">Products</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Suppliers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-subtitle">Browse our extensive range of wholesale products</p>
+            </div>
+            
+            <div class="categories-grid">
+                <!-- FMCG -->
+                <div class="category-card" data-category="fmcg">
+                    <div class="category-icon">
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <h3 class="category-title">FMCG</h3>
+                    <p class="category-desc">Food, beverages, personal care & household essentials</p>
+                    <span class="category-count">2,500+ items</span>
+                    <a href="https://fmcgious.com/products" class="category-link">View Products <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Tyres -->
+                <div class="category-card" data-category="tyres">
+                    <div class="category-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="category-title">Tyres & Automotive</h3>
+                    <p class="category-desc">Passenger, commercial & industrial tyres with accessories</p>
+                    <span class="category-count">1,200+ items</span>
+                    <a href="#" class="category-link">View Products <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Electronics -->
+                <div class="category-card" data-category="electronics">
+                    <div class="category-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="category-title">Electronics</h3>
+                    <p class="category-desc">Consumer electronics, components & industrial equipment</p>
+                    <span class="category-count">3,800+ items</span>
+                    <a href="#" class="category-link">View Products <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Industrial -->
+                <div class="category-card" data-category="industrial">
+                    <div class="category-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="category-title">Industrial Supplies</h3>
+                    <p class="category-desc">Tools, machinery, safety equipment & raw materials</p>
+                    <span class="category-count">1,900+ items</span>
+                    <a href="#" class="category-link">View Products <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Packaging -->
+                <div class="category-card" data-category="packaging">
+                    <div class="category-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3 class="category-title">Packaging</h3>
+                    <p class="category-desc">Boxes, containers, labels & shipping supplies</p>
+                    <span class="category-count">850+ items</span>
+                    <a href="#" class="category-link">View Products <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- More -->
+                <div class="category-card category-more">
+                    <div class="category-icon">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <h3 class="category-title">More Categories</h3>
+                    <p class="category-desc">Textiles, chemicals, office supplies & more</p>
+                    <a href="#" class="category-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Top picks from verified suppliers</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/Featured/Premium_Car_Tyres.jpeg" alt="Premium Car Tyres">
+                        <span class="product-badge">Hot</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Tyres</span>
+                        <h3 class="product-title">Premium All-Season Car Tyres</h3>
+                        <p class="product-desc">Durable, fuel-efficient tyres for passenger vehicles</p>
+                        <div class="product-price">
+                            <span class="price-current">$89.99</span>
+                            <span class="price-unit">/unit (MOQ: 50)</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-outline btn-sm add-to-cart">Add to Cart</button>
+                            <button class="btn btn-icon" aria-label="Quick view"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/Featured/Organic_Snacks_Pack.png" alt="Organic Snacks">
+                        <span class="product-badge new">New</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">FMCG</span>
+                        <h3 class="product-title">Organic Snack Variety Pack</h3>
+                        <p class="product-desc">Healthy, certified organic snacks in bulk packaging</p>
+                        <div class="product-price">
+                            <span class="price-current">$24.50</span>
+                            <span class="price-unit">/box (MOQ: 100)</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-outline btn-sm add-to-cart">Add to Cart</button>
+                            <button class="btn btn-icon" aria-label="Quick view"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/Featured/electronic.png" alt="Smart Electronics">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Electronics</span>
+                        <h3 class="product-title">Smart Home Device Bundle</h3>
+                        <p class="product-desc">IoT-enabled devices for modern retail & offices</p>
+                        <div class="product-price">
+                            <span class="price-current">$156.00</span>
+                            <span class="price-unit">/set (MOQ: 25)</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-outline btn-sm add-to-cart">Add to Cart</button>
+                            <button class="btn btn-icon" aria-label="Quick view"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/Featured/industrial_Supplies.png" alt="Industrial Tools">
+                        <span class="product-badge">Deal</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Industrial</span>
+                        <h3 class="product-title">Professional Power Tool Kit</h3>
+                        <p class="product-desc">Heavy-duty tools for construction & manufacturing</p>
+                        <div class="product-price">
+                            <span class="price-current">$320.00</span>
+                            <span class="price-original">$399.00</span>
+                            <span class="price-unit">/kit (MOQ: 10)</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-outline btn-sm add-to-cart">Add to Cart</button>
+                            <button class="btn btn-icon" aria-label="Quick view"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Tradeious?</h2>
+                <p class="section-subtitle">End-to-end solutions for B2B procurement</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Verified Suppliers</h3>
+                    <p>All partners undergo rigorous verification for quality & reliability</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Global Logistics</h3>
+                    <p>Seamless shipping & customs support to 50+ countries worldwide</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Flexible Payments</h3>
+                    <p>Multiple payment options with trade credit & escrow protection</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated account managers & multilingual customer support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-content">
+                <h2 class="section-title">About Tradeious</h2>
+                <p class="about-text">Founded in 2020, Tradeious is a leading B2B digital marketplace connecting businesses with trusted suppliers of FMCG, automotive, electronics, and industrial products globally.</p>
+                <p class="about-text">We leverage technology, logistics expertise, and deep industry knowledge to simplify procurement, reduce costs, and accelerate growth for retailers, distributors, and enterprises.</p>
+                
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <span class="stat-number">2020</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="stat-number">$50M+</span>
+                        <span class="stat-label">GMV</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Retention</span>
+                    </div>
+                </div>
+                
+                <a href="#" class="btn btn-primary">Learn More About Us</a>
+            </div>
+            <div class="about-image">
+                <img src="./images/team/team.png" alt="Tradeious Team">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Tradeious transformed our supply chain. We reduced procurement costs by 30% and cut delivery times significantly."</p>
+                    <div class="testimonial-author">
+                        <img src="./images/clients/Raj_Sharma.png" alt="Raj Sharma">
+                        <div>
+                            <strong>Raj Sharma</strong>
+                            <span>Procurement Director, RetailPlus</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The platform is intuitive, suppliers are reliable, and support is exceptional. Highly recommended for B2B sourcing."</p>
+                    <div class="testimonial-author">
+                        <img src="./images/clients/Maria_Lopez.png" alt="Maria Lopez">
+                        <div>
+                            <strong>Maria Lopez</strong>
+                            <span>CEO, AutoParts Global</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"From electronics to packaging, Tradeious has everything we need. The bulk pricing and logistics support are unmatched."</p>
+                    <div class="testimonial-author">
+                        <img src="./images/clients/James_Kim.png" alt="James Kim">
+                        <div>
+                            <strong>James Kim</strong>
+                            <span>Operations Manager, TechDistributors Inc.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <!-- <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Streamline Your Procurement?</h2>
+                <p>Join thousands of businesses saving time and money with Tradeious.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-lg">Create Free Account</a>
+                    <a href="#" class="btn btn-outline btn-lg">Schedule Demo</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p>Have questions? Our team is ready to help you find the right products and solutions.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Headquarters</strong>
+                                <p>TAREEQ AL MAJD TR. Office NO. 10N,<br>KHAN SAHEB BUILDING AL MAJAZ AREA,<br>SHARJAH, UAE</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+971 5 742 1472</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>sale@tradeious.com<br>export@tradeious.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Business Hours</strong>
+                                <p>Mon-Fri: 9AM-6PM (GMT+4)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Business Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name *</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">I'm interested in *</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Select a category</option>
+                            <option value="fmcg">FMCG Products</option>
+                            <option value="tyres">Tyres & Automotive</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="industrial">Industrial Supplies</option>
+                            <option value="packaging">Packaging</option>
+                            <option value="partnership">Partnership Opportunities</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon"><i class="fas fa-cube"></i></span>
+                        <span class="logo-text">Tradeious</span>
+                    </div>
+                    <p class="footer-desc">Your global B2B marketplace for FMCG, tyres, electronics & industrial supplies. Trusted by businesses worldwide.</p>
+                    <div class="footer-apps">
+                        <a href="#" class="app-badge"><i class="fab fa-apple"></i> App Store</a>
+                        <a href="#" class="app-badge"><i class="fab fa-google-play"></i> Google Play</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">FMCG</a></li>
+                        <li><a href="#">Tyres & Automotive</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Industrial Supplies</a></li>
+                        <li><a href="#">Packaging</a></li>
+                        <li><a href="#">All Categories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns Policy</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Bulk Orders</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Supplier Agreement</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tradeious Pte Ltd. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Sitemap</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Do Not Sell My Info</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="modal" id="searchModal">
+        <div class="modal-content">
+            <button class="modal-close" id="searchClose">&times;</button>
+            <form class="search-form">
+                <input type="search" placeholder="Search products, categories, suppliers..." aria-label="Search">
+                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+            </form>
+            <div class="search-suggestions">
+                <p>Popular searches:</p>
+                <div class="suggestion-tags">
+                    <span>car tyres</span>
+                    <span>organic snacks</span>
+                    <span>bluetooth speakers</span>
+                    <span>packaging boxes</span>
+                    <span>power tools</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart (<span class="cart-count">0</span>)</h3>
+            <button class="cart-close" id="cartClose">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically added here -->
+            <p class="cart-empty">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
