@@ -1,0 +1,14 @@
+{
+  "name": "tradeious-website",
+  "version": "1.0.0",
+  "description": "Tradeious Global Trading Group — Corporate Website",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve . -l 3000",
+    "start": "npx serve . -l 3000",
+    "preview": "open http://localhost:3000 && npx serve . -l 3000"
+  },
+  "keywords": ["tradeious", "trading", "corporate", "fmcg", "tyre-baba"],
+  "author": "Tradeious Global",
+  "license": "UNLICENSED"
+}

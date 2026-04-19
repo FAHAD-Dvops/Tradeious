@@ -1,0 +1,92 @@
+/* ============================================
+   Tradeious Global Trading Group
+   Main Stylesheet
+   ============================================ */
+
+/* --- Base Reset & Typography --- */
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #f9f9ff;
+  color: #111c2d;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #004a99;
+  color: #ffffff;
+}
+
+/* --- Font Utility Classes --- */
+.font-serif,
+.serif-editorial {
+  font-family: 'Newsreader', serif;
+}
+
+.sans-engine {
+  font-family: 'Manrope', sans-serif;
+}
+
+.font-label,
+.label-precision {
+  font-family: 'Inter', sans-serif;
+}
+
+/* --- Material Icons --- */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+/* --- Editorial Grid --- */
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* --- Glass Effects --- */
+.glass-effect {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* --- Editorial Shadow --- */
+.editorial-shadow {
+  box-shadow: 0px 12px 32px rgba(17, 28, 45, 0.06);
+}
+
+/* --- Editorial Overlay (used on Tyre Baba hero) --- */
+.editorial-overlay {
+  background: linear-gradient(to right, rgba(17, 28, 45, 0.9) 0%, rgba(17, 28, 45, 0.4) 100%);
+}
+
+/* --- Glass Navigation --- */
+.glass-nav {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* --- Form Focus States --- */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #00346f !important;
+}
+
+/* --- Smooth Scroll --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Transition Utilities --- */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* --- Navigation Active Link --- */
+.nav-link-active {
+  color: #004A99 !important;
+  border-bottom: 2px solid #004A99;
+  padding-bottom: 0.25rem;
+}
